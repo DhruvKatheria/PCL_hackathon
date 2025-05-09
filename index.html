@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExploreWorld - Discover Your Next Destination</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">ExploreWorld</div>
+    <ul class="nav-links">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="travel-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <h1>Travel. Discover. Explore.</h1>
+      <p>Your journey starts here. Find your next destination.</p>
+      <button onclick="document.getElementById('destinations').scrollIntoView({behavior: 'smooth'});">Explore Now</button>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section class="section" id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <a href="paris.html">
+          <img src="paris.jpg" type="image/jpg" alt="Paris">
+          <h3>Paris</h3>
+        </a>
+      </div>
+      <div class="card">
+        <a href="bali.html">
+          <img src="bali.jpg" type="image/jpg" alt="Bali">
+          <h3>Bali</h3>
+        </a>
+      </div>
+      <div class="card">
+        <a href="newyork.html">
+          <img src="newyork.webp" type="image/webp" alt="New York">
+          <h3>New York</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>About ExploreWorld</h2>
+    <p>ExploreWorld is your travel companion, bringing you the most inspiring destinations and travel experiences across the globe.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <div id="formMessage"></div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ExploreWorld. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
